@@ -164,6 +164,11 @@ keymap = {
     # other
     "shell make": "make\n",
     "shell jobs": "jobs\n",
+
+    'run long job': 'longjob -28day -nobackground -c ',
+    'screen attach': 'screen -dr ',
+    'screen new': 'screen -S ',
+    'jupiter notebook': 'jupyter notebook ',
 }
 
 for action in ('get', 'delete', 'describe'):
