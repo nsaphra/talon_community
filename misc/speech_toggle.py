@@ -15,7 +15,7 @@ sleepy.keymap({
     'talon wake': lambda m: speech.set_enabled(True),
 
     'dragon mode': [lambda m: speech.set_enabled(False), lambda m: dictation_group.disable(), lambda m: engine.mimic('wake up'.split())],
-    'dictation mode': [lambda m: speech.set_enabled(False), lambda m: dictation_group.enable(), lambda m: engine.mimic('go to sleep'.split())],
+    'dictation mode': [lambda m: speech.set_enabled(False), lambda m: engine.mimic('go to sleep'.split()), lambda m: dictation_group.enable()],
     'talon mode': [lambda m: speech.set_enabled(True), lambda m: dictation_group.disable(), lambda m: engine.mimic('go to sleep'.split())],
     'full sleep mode': [lambda m: speech.set_enabled(False), lambda m: dictation_group.disable(), lambda m: engine.mimic('go to sleep'.split())]
 })
