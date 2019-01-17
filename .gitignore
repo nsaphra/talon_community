@@ -108,3 +108,4 @@ venv.bak/
 
 # jetbrains
 .idea/
+private.py
